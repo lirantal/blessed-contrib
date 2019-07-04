@@ -6,7 +6,9 @@
   "types": "index.d.ts",
   "scripts": {
     "test": "npm run lint",
-    "lint": "eslint lib"
+    "lint": "eslint lib",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -39,6 +41,8 @@
     "sparkline": "^0.1.1",
     "strip-ansi": "^3.0.0",
     "term-canvas": "0.0.5",
-    "x256": ">=0.0.1"
-  }
+    "x256": ">=0.0.1",
+    "snyk": "^1.189.0"
+  },
+  "snyk": true
 }
